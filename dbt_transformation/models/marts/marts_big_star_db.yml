@@ -1,0 +1,20 @@
+version: 2
+
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_id
+        test:
+          - unique
+          - not_null
+      - name: email
+        test:
+          - not_null
+      - name: city
+        test:
+          - not_null
+      - name: country
+        test:
+          - not_null
+
